@@ -1,8 +1,4 @@
 
-
-# 📘 README.md
-
-```markdown
 # 🚀 NFC Attendance System
 
 Sistem absensi modern menggunakan **NFC/RFID card** untuk mencatat kehadiran secara otomatis.  
@@ -39,61 +35,56 @@ Dibangun dengan **Node.js (Express + TypeScript)** untuk backend, **Next.js 14 +
 ## ⚡️ Quick Start
 
 ### 1. Clone repo
-```bash
+
 git clone https://github.com/username/nfc-attendance-system.git
 cd nfc-attendance-system
-````
+
 
 ### 2. Setup environment
 
-Copy `.env.example` ke `.env` lalu sesuaikan:
-
-```bash
 cp .env.example .env
-```
+
 
 ### 3. Jalankan dengan Docker
 
-```bash
+
 docker compose up --build
-```
 
 * API → [http://localhost:4000](http://localhost:4000)
 * Web → [http://localhost:3000](http://localhost:3000)
 
 Cek API health:
 
-```bash
-curl http://localhost:4000/health
-```
 
----
+curl http://localhost:4000/health
+
+
+
 
 ## 🛠 Development Mode (tanpa Docker)
 
 ### Backend
 
-```bash
+
 cd server
 npm install
 npm run dev
-```
+
 
 ### Frontend
 
-```bash
+
 cd web
 npm install
 npm run dev
-```
 
----
+
 
 ## 🔑 Contoh API Tap
 
 Endpoint: `POST /tap`
 
-```json
+
 {
   "deviceKey": "devkey-demo-123",
   "uid": "04A1B2C3"
@@ -102,15 +93,13 @@ Endpoint: `POST /tap`
 
 Response:
 
-```json
+
 {
   "message": "Tap recorded (skeleton)",
   "deviceKey": "devkey-demo-123",
   "uid": "04A1B2C3"
 }
-```
 
----
 
 ## 📌 Roadmap
 
@@ -132,7 +121,7 @@ Silakan fork repo ini lalu buat branch baru:
 git checkout -b feature/nama-fitur
 ```
 
----
+
 
 ## 📜 Lisensi
 
