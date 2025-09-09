@@ -24,13 +24,11 @@ Dibangun dengan **Node.js (Express + TypeScript)** untuk backend, **Next.js 14 +
 ├── .env.example
 └── README.md
 
-````
 
 - **API** → menerima data tap `{ deviceKey, uid }` dari perangkat.
 - **Web** → simulasi tap, dashboard sederhana.
 - **DB** → PostgreSQL (default, bisa ganti SQLite/MySQL).
 
----
 
 ## ⚡️ Quick Start
 
@@ -89,7 +87,7 @@ Endpoint: `POST /tap`
   "deviceKey": "devkey-demo-123",
   "uid": "04A1B2C3"
 }
-```
+
 
 Response:
 
@@ -117,9 +115,8 @@ Response:
 Pull Request & Issue sangat terbuka.
 Silakan fork repo ini lalu buat branch baru:
 
-```bash
 git checkout -b feature/nama-fitur
-```
+
 
 
 
