@@ -1,0 +1,14 @@
+import express from 'express';
+import dotenv from 'dotenv';
+import cors from 'cors';
+import morgan from 'morgan';
+import { tapRouter } from './routes/tap.js';
+dotenv.config();
+const app = express();
+app.use(cors({ origin: process.env.CORS_ORIGIN || '*' }));
+app.use(express.json());
+app.use(morgan('dev'));
+app.get('/health', (_req, res) => res.json({ ok: true }));
+app.use('/tap', tapRouter);
+const port = Number(process.env.API_PORT || 4000);
+app.listen(port, () => console.log(`API running on :${port}`));
