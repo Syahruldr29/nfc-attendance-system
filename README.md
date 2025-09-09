@@ -16,7 +16,7 @@ Dibangun dengan **Node.js (Express + TypeScript)** untuk backend, **Next.js 14 +
 ---
 
 ## 🏗 Arsitektur
-```
+
 
 ├── server/   # Backend (Express + Prisma)
 ├── web/      # Frontend (Next.js + Tailwind)
